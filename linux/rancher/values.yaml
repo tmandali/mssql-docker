@@ -20,7 +20,7 @@ statefulset:
           image:
             repository: mcr.microsoft.com/mssql/server
             pullPolicy: IfNotPresent
-            tag: 2019-latest
+            tag: 2022-latest
           ports:
             databaseEngineContainerPort: 1433
           extraVolumeMounts: []
@@ -39,4 +39,4 @@ storageClass:
   type: null
 
 storage:
-  size: 8
+  size: 1
